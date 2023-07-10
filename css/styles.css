@@ -174,3 +174,43 @@ input, textarea, button, select{
 .btn-more--pink::after{
     background-color: var(--SoftRed);
 }
+/* Seccion de testimoniales */
+.section-testimoniales{
+    padding: 0rem 1rem 1rem 1rem;
+}
+.section-testimoniales-title{
+    color: var(--GrayishBlue);
+    font-family: var(--fuenteHeadings);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.testimoniales__container{
+    display: grid;
+}
+.testimonial{
+    display: grid;
+    place-items: center;
+    padding-block: 2rem;
+    row-gap: 1.5rem;
+}
+.testimonial__img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.testimonial__exp{
+    line-height: 1.5;
+    text-align: center;
+    color: var(--VeryDarkGrayishBlue);
+}
+.testimonial__name{
+    text-align: center;
+    font-family: var(--fuenteHeadings);
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.testimonial__name--job{
+    display: block;
+    color: var(--DarkGrayishBlue);
+    font-size: 14px;
+}
