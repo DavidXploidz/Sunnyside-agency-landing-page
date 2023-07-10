@@ -1,0 +1,83 @@
+:root{
+    /* ## Colors */
+    /* ### Primary */
+    --SoftRed: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --DarkDesaturatedCyan: hsl(167, 40%, 24%); /* (graphic design text)*/
+    --DarkBlue: hsl(198, 62%, 26%); /*(photography text)*/
+    --DarkModerateCyan: hsl(168, 34%, 41%); /*(footer)*/
+    --Cyan: #3dbeff;
+    /* ### Neutral */
+    --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --DarkGrayishBlue: hsl(232, 10%, 55%);
+    --GrayishBlue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --fuentePrincipal: 'Barlow', sans-serif;
+    --fuenteHeadings: 'Fraunces', serif;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body{
+    font-size: 18px;
+    font-family: var(--fuentePrincipal);
+    min-height: 100vh;
+}
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+input, textarea, button, select{
+    font: inherit;
+}
+/* Utilidades */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+.header{
+    position: relative;
+    background-image: url('/images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 375px;
+}
+.header__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-inline: 5vw;
+}
+.header__title{
+    position: absolute;
+    top: 20%;
+    width: 300px;
+    left: calc(50% - 150px);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--White);
+    text-transform: uppercase;
+    font-family: var(--fuenteHeadings);
+}
+.header__arrow-down{
+    position: absolute;
+    top: calc(50% - 57px);
+    left: calc(50% - 18px);
+}
