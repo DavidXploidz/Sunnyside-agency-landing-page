@@ -19,3 +19,11 @@ const elementosOcultos = document.querySelectorAll('.hidden');
 elementosOcultos.forEach((elemento) => {
     observador.observe(elemento)
 });
+/*-------------------------------------------------------------------------------------------*/
+const icon_ham = document.querySelector('#icon-ham');
+const menu_mobile = document.querySelector('#menu-mobile');
+
+icon_ham.addEventListener('click', () => {
+    document.body.classList.toggle('notScroll');
+    menu_mobile.classList.toggle('menu-mobile--active');
+})
