@@ -168,6 +168,15 @@ input, textarea, button, select{
     .main__transform, .main__stand, .main__design, .main__photo{
         grid-template-columns: repeat(2, 1fr);
     }
+    .main__stand{
+        grid-template-areas: 'main_stand_info main_stand_image';
+    }
+    .stand-info{
+        grid-area: main_stand_info;
+    }
+    .stand-image{
+        grid-area: main_stand_image;
+    }
 }
 .main__design, .main__photo{
     grid-template-rows: 1fr 1fr;
@@ -259,11 +268,19 @@ input, textarea, button, select{
     .main-text{
         text-align: left;
     }
+    .main-title--design{
+        text-align: center;
+    }
+    .main-title--photo{
+        text-align: center;
+    }
 }
 .main-text--design{
     color: var(--DarkDesaturatedCyan);
+    text-align: center;
 }
 .main-text--photo{
+    text-align: center;
     color: var(--DarkBlue);
 }
 .btn-more{
@@ -302,9 +319,12 @@ input, textarea, button, select{
 .btn-more--pink::after{
     background-color: var(--SoftRed);
 }
+.btn-more:hover::after{
+    opacity: 1;
+}
 /* Seccion de testimoniales */
 .section-testimoniales{
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 3rem 0
 }
 .section-testimoniales-title{
     color: var(--GrayishBlue);
@@ -435,6 +455,9 @@ input, textarea, button, select{
     font-size: 16px;
     color: var(--DarkModerateCyan);
 }
+.footer__link:hover{
+    color: var(--White);
+}
 /* Menu Mobile */
 .menu-mobile{
     display: none;
@@ -487,6 +510,11 @@ input, textarea, button, select{
     font-size: 15px;
     color: var(--VeryDarkDesaturatedBlue);
     background-color: var(--Yellow);
+}
+.menu__link--contact:hover{
+    color: var(--White);
+    background-color: var(--Cyan);
+    filter: contrast(160%);
 }
 @media (min-width: 668px){ 
     .menu__link{
