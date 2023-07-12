@@ -387,16 +387,16 @@ input, textarea, button, select{
     background-size: cover;
 }
 .collage__img--milk{
-    background-image: url('/images/mobile/image-gallery-milkbottles.jpg');
+    background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
 }
 .collage__img--orange{
-    background-image: url('/images/mobile/image-gallery-orange.jpg');
+    background-image: url('../images/mobile/image-gallery-orange.jpg');
 }
 .collage__img--cone{
-    background-image: url('/images/mobile/image-gallery-cone.jpg');
+    background-image: url('../images/mobile/image-gallery-cone.jpg');
 }
 .collage__img--sugar{
-    background-image: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+    background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
 }
 @media (min-width: 668px){ 
     .section-collage{
@@ -406,16 +406,16 @@ input, textarea, button, select{
         min-height: 400px;
     }
     .collage__img--milk{
-        background-image: url('/images/desktop/image-gallery-milkbottles.jpg');
+        background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
     }
     .collage__img--orange{
-        background-image: url('/images/desktop/image-gallery-orange.jpg');
+        background-image: url('../images/desktop/image-gallery-orange.jpg');
     }
     .collage__img--cone{
-        background-image: url('/images/desktop/image-gallery-cone.jpg');
+        background-image: url('../images/desktop/image-gallery-cone.jpg');
     }
     .collage__img--sugar{
-        background-image: url('/images/desktop/image-gallery-sugarcubes.jpg');
+        background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
     }
 }
 /* Footer section */
